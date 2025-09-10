@@ -13,7 +13,7 @@ exports.sendOtpEmail = async (email, otp) => {
     const message = {
       from: process.env.EMAIL_USER,
       to: email,
-      subject: 'Tiny Dragon Therapy, OTP update',
+      subject: 'Doctor Speech, OTP update',
       text: `Your OTP code is: ${otp}`,
       // html: '<h1>From the team of Tiny Dragon Therapy</h1>',
     };
