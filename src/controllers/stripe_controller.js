@@ -1,4 +1,4 @@
-const stripe = require('stripe')(process.env.STRIPE_TEST_SECRET_KEY); // Load from env for security
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY); // Load from env for security
 const { STATUS_CODES } = require("../constants/status_codes");
 const { successJson, errorJson, Messages } = require('../constants/messages');
 
